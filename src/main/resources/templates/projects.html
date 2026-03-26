@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<section class="section">
+    <h1>Our Work</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>E-Commerce Platform</h3>
+            <p>Scalable shopping app with payment integration.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive personal branding website.</p>
+        </div>
+        <div class="card">
+            <h3>CRM System</h3>
+            <p>Custom dashboard for business management.</p>
+        </div>
+    </div>
+
+</section>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

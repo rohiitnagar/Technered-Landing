@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TechNerd Solutions</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<section class="hero">
+    <h1>We Build <span>Modern Software</span></h1>
+    <p>Helping startups & businesses grow with scalable solutions</p>
+    <a href="/contact"><button class="btn">Get a Quote</button></a>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Custom full-stack apps using Spring Boot & React.</p>
+        </div>
+        <div class="card">
+            <h3>API Development</h3>
+            <p>Secure and scalable backend systems.</p>
+        </div>
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Modern interfaces that convert users into clients.</p>
+        </div>
+    </div>
+</section>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

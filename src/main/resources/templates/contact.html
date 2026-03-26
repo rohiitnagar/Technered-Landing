@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<section class="section">
+    <h1>Contact Us</h1>
+
+    <form th:action="@{/contact}" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" placeholder="Your Message"></textarea><br><br>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
