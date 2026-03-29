@@ -19,3 +19,5 @@ public class ContactController {
         return "redirect:/?success";
     }
 }
+
+//Addded 
